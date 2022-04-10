@@ -1,6 +1,6 @@
 ![Git_Title](https://user-images.githubusercontent.com/64983135/162639329-cae63b23-4d13-41c9-a2db-64f88806e8b6.png)
 
-# Narcissus Backdoor Attack
+# Narcissus Clean-label Backdoor Attack
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
