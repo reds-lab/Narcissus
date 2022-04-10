@@ -50,7 +50,7 @@ By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcis
 
 This function will return a (1x3x32x32) NumPy array, which contains a Narcissus backdoor trigger.
 
-## Overall Workfolw:
+# Overall Workfolw:
 ![Narcissus](https://user-images.githubusercontent.com/64983135/162639447-05d02a49-9668-49a0-8d91-c82b952a801e.png)
 The workflow of the Narcissus attack consists of four functional parts:
 
