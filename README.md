@@ -1,4 +1,4 @@
-![Narcissus](https://user-images.githubusercontent.com/77789132/162528344-188876a8-7809-4ca2-bc08-71338f108684.jpg)
+![narcissus](https://user-images.githubusercontent.com/77789132/162637159-a356ba3e-a9fe-48b6-915d-502cb5c9ef67.png)
 
 # Narcissus Backdoor Attack
 
