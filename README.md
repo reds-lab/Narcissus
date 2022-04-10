@@ -4,7 +4,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-This is the official implementation and demonstration of the paper: `<a href="http://www.yi-zeng.com/wp-content/uploads/2022/04/Narcissus_Backdoor.pdf"> Narcissus: A Practical Clean-Label Backdoor Attack with Limited Information.</a>'
+This is the official implementation of the paper: `<a href="http://www.yi-zeng.com/wp-content/uploads/2022/04/Narcissus_Backdoor.pdf"> Narcissus: A Practical Clean-Label Backdoor Attack with Limited Information.</a>'
 
 Narcissus clean-label backdoor attack provides an affirmative answer to whether backdoor attacks can present real threats: as they normally require label manipulations or strong accessibility to non-target class samples. This work demonstrates a powerful attack with access to only the target class with minimum assumptions on the attacker's knowledge and capability.
 
