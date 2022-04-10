@@ -4,6 +4,8 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+This is the official implementation and demonstration of the paper: `<a href="http://www.yi-zeng.com/wp-content/uploads/2022/04/Narcissus_Backdoor.pdf"> Narcissus: A Practical Clean-Label Backdoor Attack with Limited Information.</a>'
+
 Narcissus clean-label backdoor attack provides an affirmative answer to whether backdoor attacks can present real threats: as they normally require label manipulations or strong accessibility to non-target class samples. This work demonstrates a powerful attack with access to only the target class with minimum assumptions on the attacker's knowledge and capability.
 
 In our paper, we show inserting maliciously-crafted Narcissus poisoned examples totaling less than 0.5\% of the target-class data size or 0.05\% of the training set size, we can manipulate a model trained on the poisoned dataset to classify test examples from arbitrary classes into the target class when the examples are patched with a backdoor trigger; at the same time, the trained model still maintains good accuracy on typical test examples without the trigger as if it were trained on a clean dataset. 
