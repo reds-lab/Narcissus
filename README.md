@@ -44,7 +44,7 @@ There are a several of optional arguments in the ```Narcissus.ipynb```:
 - ```patch_mode``` : Users can change this parameter to ```change```, entering the patch trigger mode. 
 
 # Function block
-By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcissus backdoor attack into their own test environment. There are 2 parameters:
+By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcissus backdoor attack into their own test environment by ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
 - ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
 - ```lab```: The number of the target label
 
