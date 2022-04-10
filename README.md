@@ -35,12 +35,20 @@ Use the Narcissus.ipynb notebook for a quick start of our NARCISSUS backdoor att
 
 There are a several of optional arguments in the ```Narcissus.ipynb```:
 
+- ```lab```: The number of the target label
 - ```l_inf_r``` : Radius of the L-inf ball which constraint the attack stealthiness.
 - ```surrogate_model```, ```generating_model``` : Define the model used to generate the trigger. In the usual case should be set to the same model.
 - ```surrogate_epochs``` : The number of epochs for surrogate model training.
 - ```warmup_round``` : The number of epochs for poison warmup trainging.
 - ```gen_round``` : The number of epoches for poison generation.
 - ```patch_mode``` : Users can change this parameter to ```change```, entering the patch trigger mode. 
+
+# Function block
+By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcissus backdoor attack into their own test environment. There are 2 parameters:
+- ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
+- ```lab```: The number of the target label
+
+This function will return a (1x3x32x32) NumPy array, which contains a Narcissus backdoor trigger.
 
 ## Overall Workfolw:
 ![Narcissus](https://user-images.githubusercontent.com/64983135/162639447-05d02a49-9668-49a0-8d91-c82b952a801e.png)
