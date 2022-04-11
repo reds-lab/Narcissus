@@ -1,4 +1,4 @@
-![Git_Title](https://user-images.githubusercontent.com/64983135/162639329-cae63b23-4d13-41c9-a2db-64f88806e8b6.png)
+![Narcissus_h](https://user-images.githubusercontent.com/77789132/162661922-a0e6beb3-8d3a-4ad6-9e5a-368a0083efa2.jpg)
 
 # Narcissus Clean-label Backdoor Attack
 
@@ -58,3 +58,4 @@ The workflow of the Narcissus attack consists of four functional parts:
 - Step 2: Trigger-Generation: deploying the surrogate model after the poi-warm-up as a feature extractor to synthesize the inward-pointing noise based on the target class samples; 
 - Step 3: Trigger Insertion: utilizing the Narcissus trigger and poisoning a small amount of the target class sample; 
 - Step 4: Test Query Manipulation: magnifying the Narcissus trigger and manipulating the test results.
+
