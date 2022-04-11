@@ -14,7 +14,7 @@ Narcissus backdoor attack is highly effective across datasets and models, even w
 
 # Features
 - Clean label backdoor attack
-- Low poison rate (0.05\%)
+- Low poison rate (can be less than 0.05\%)
 - All-to-one attack
 - Only require target class data
 - Pyhsical world attack
