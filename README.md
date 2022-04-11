@@ -1,4 +1,4 @@
-![Narcissus_h](https://user-images.githubusercontent.com/77789132/162661922-a0e6beb3-8d3a-4ad6-9e5a-368a0083efa2.jpg)
+![Narcissus-Caravaggio](https://user-images.githubusercontent.com/77789132/162662050-11494b6e-a4fd-486b-80ef-d895654e4a8d.jpg)
 
 # Narcissus Clean-label Backdoor Attack
 
