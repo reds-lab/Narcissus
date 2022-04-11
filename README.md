@@ -18,7 +18,7 @@ Narcissus backdoor attack is highly effective across datasets and models, even w
 - All-to-one attack
 - Only require target class data
 - Pyhsical world attack
-- Attack train from scrtch model
+- Work with the case that models are trained from scratch
 
 # Requirements
 Python >= 3.6
