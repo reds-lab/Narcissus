@@ -4,7 +4,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-This is the official implementation of the paper: `<a href="http://www.yi-zeng.com/wp-content/uploads/2022/04/Narcissus_Backdoor.pdf"> Narcissus: A Practical Clean-Label Backdoor Attack with Limited Information.</a>'
+This is the official implementation of the paper: `<a href="http://www.yi-zeng.com/wp-content/uploads/2022/04/Narcissus_Backdoor.pdf">Narcissus: A Practical Clean-Label Backdoor Attack with Limited Information.</a>'
 
 Narcissus clean-label backdoor attack provides an affirmative answer to whether backdoor attacks can present real threats: as they normally require label manipulations or strong accessibility to non-target class samples. This work demonstrates a simple yet powerful attack with access to only the target class with minimum assumptions on the attacker's knowledge and capability.
 
@@ -52,7 +52,7 @@ This function will return a (1x3x32x32) NumPy array, which contains a Narcissus 
 
 # Overall Workfolw:
 ![Narcissus](https://user-images.githubusercontent.com/64983135/162639447-05d02a49-9668-49a0-8d91-c82b952a801e.png)
-The workflow of the Narcissus attack consists of four functional parts (<a href="https://www.cs.columbia.edu/CAVE/databases/pubfig/"> PubFig </a> as an example):
+The workflow of the Narcissus attack consists of four functional parts (<a href="https://www.cs.columbia.edu/CAVE/databases/pubfig/">PubFig</a> as an example):
 
 - Step 1: Poi-warm-up: acquiring a surrogate model from a POOD-data-pre-trained model with only access to the target class samples. 
 - Step 2: Trigger-Generation: deploying the surrogate model after the poi-warm-up as a feature extractor to synthesize the inward-pointing noise based on the target class samples; 
