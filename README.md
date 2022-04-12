@@ -61,7 +61,7 @@ By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcis
 narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
 ```
 
-This function will return a (1x3x32x32) NumPy array, which contains a Narcissus backdoor trigger.
+This function will return a \[1,3,32,32\] NumPy array, which contains a Narcissus backdoor trigger.
 
 
 
