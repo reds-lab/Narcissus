@@ -2,7 +2,9 @@
 
 # Narcissus Clean-label Backdoor Attack
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![Python 3.6](https://img.shields.io/badge/python-3.6-DodgerBlue.svg?style=plastic)
+![Pytorch 1.10.1](https://img.shields.io/badge/pytorch-1.10.1-DodgerBlue.svg?style=plastic)
+![CUDA 11.0](https://img.shields.io/badge/cuda-11.0-DodgerBlue.svg?style=plastic)
 
 This is the official implementation of the paper: `<a href="https://arxiv.org/pdf/2204.05255.pdf">Narcissus: A Practical Clean-Label Backdoor Attack with Limited Information.</a>'
 
@@ -22,13 +24,10 @@ Narcissus backdoor attack is highly effective across datasets and models, even w
 - Work with the case that models are trained from scratch
 
 # Requirements
-Python >= 3.6
-
-PyTorch >= 1.10.1
-
-TorchVisison >= 0.11.2
-
-OpenCV >= 4.5.3
++ Python >= 3.6
++ PyTorch >= 1.10.1
++ TorchVisison >= 0.11.2
++ OpenCV >= 4.5.3
 
 # Usage & HOW-TO
 Use the Narcissus.ipynb notebook for a quick start of our NARCISSUS backdoor attack. The default attack and defense state both use Resnet-18 as the model, CIFAR-10 as the dataset, and the default attack poisoning rate is 0.5% In-class/0.05% overall.
