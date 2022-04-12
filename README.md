@@ -58,7 +58,7 @@ By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcis
 - ```lab```: The number of the target label
 
 ```ruby
-#How to call the function 
+#How to launch the attack with the Push of ONE Button?
 narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
 ```
 
