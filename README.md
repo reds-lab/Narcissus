@@ -30,8 +30,7 @@ TorchVisison >= 0.11.2
 
 OpenCV >= 4.5.3
 
-# Usage
-
+# Usage & HOW-TO
 Use the Narcissus.ipynb notebook for a quick start of our NARCISSUS backdoor attack. The default attack and defense state both use Resnet-18 as the model, CIFAR-10 as the dataset, and the default attack poisoning rate is 0.5% In-class/0.05% overall.
 
 There are a several of optional arguments in the ```Narcissus.ipynb```:
@@ -44,19 +43,7 @@ There are a several of optional arguments in the ```Narcissus.ipynb```:
 - ```gen_round``` : The number of epoches for poison generation.
 - ```patch_mode``` : Users can change this parameter to ```change```, entering the patch trigger mode. 
 
-# Function block
-By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcissus backdoor attack into their own test environment by ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
-- ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
-- ```lab```: The number of the target label
-
-```
-#How to call the function 
-narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
-```
-
-This function will return a (1x3x32x32) NumPy array, which contains a Narcissus backdoor trigger.
-
-# Overall Workfolw:
+## Overall Workfolw:
 ![Narcissus](https://user-images.githubusercontent.com/64983135/162639447-05d02a49-9668-49a0-8d91-c82b952a801e.png)
 The workflow of the Narcissus attack consists of four functional parts (<a href="https://www.cs.columbia.edu/CAVE/databases/pubfig/">PubFig</a> as an example):
 
@@ -65,4 +52,19 @@ The workflow of the Narcissus attack consists of four functional parts (<a href=
 - Step 3: Trigger Insertion: utilizing the Narcissus trigger and poisoning a small amount of the target class sample; 
 - Step 4: Test Query Manipulation: magnifying the Narcissus trigger and manipulating the test results.
 
+## Function block
+By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcissus backdoor attack into their own test environment by ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
+- ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
+- ```lab```: The number of the target label
 
+```ruby
+#How to call the function 
+narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
+```
+
+This function will return a (1x3x32x32) NumPy array, which contains a Narcissus backdoor trigger.
+
+
+
+# Special thanks to...
+[![Stargazers repo roster for @ruoxi-jia-group/Narcissus-backdoor-attack](https://reporoster.com/stars/ruoxi-jia-group/Narcissus-backdoor-attack)](https://github.com/ruoxi-jia-group/Narcissus-backdoor-attack/stargazers)
