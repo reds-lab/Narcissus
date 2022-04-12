@@ -61,7 +61,7 @@ By importing the ```narcissus_func.py``` file, users can quickly deploy the Narc
 narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
 ```
 
-This function will return a \[1,3,32,32\] NumPy array, which contains the Narcissus backdoor trigger generated based on only the target class (e.g., '2'). DO NOT forget to use the trigger to poison some samples and launch the attack;)
+This function will return a \[1,3,32,32\] NumPy array, which contains the Narcissus backdoor trigger generated based on only the target class (e.g., '2'). DO NOT forget to use the trigger to poison some target class samples and launch the attack;)
 
 
 
