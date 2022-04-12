@@ -51,7 +51,7 @@ The workflow of the Narcissus attack consists of four functional parts (<a href=
 - Step 3: Trigger Insertion: utilizing the Narcissus trigger and poisoning a small amount of the target class sample; 
 - Step 4: Test Query Manipulation: magnifying the Narcissus trigger and manipulating the test results.
 
-## Function block
+## Can you make it easier?
 By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcissus backdoor attack into their own test environment by ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
 - ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
 - ```lab```: The number of the target label
