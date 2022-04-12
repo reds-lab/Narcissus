@@ -48,6 +48,11 @@ By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcis
 - ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
 - ```lab```: The number of the target label
 
+```
+#How to call the function 
+narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
+```
+
 This function will return a (1x3x32x32) NumPy array, which contains a Narcissus backdoor trigger.
 
 # Overall Workfolw:
