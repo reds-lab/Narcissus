@@ -30,15 +30,15 @@ Narcissus backdoor attack is highly effective across datasets and models, even w
 + OpenCV >= 4.5.3
 
 # Usage & HOW-TO
-Use the Narcissus.ipynb notebook for a quick start of our NARCISSUS backdoor attack. The default attack and defense state both use Resnet-18 as the model, CIFAR-10 as the dataset, and the default attack poisoning rate is 0.5% In-class/0.05% overall.
+Use the Narcissus.ipynb notebook for a quick start of our NARCISSUS backdoor attack. The default attack and defense state both use Resnet-18 as the model, CIFAR-10 as the target dataset, and the default attack poisoning rate is 0.5% In-class/0.05% overall.
 
 There are a several of optional arguments in the ```Narcissus.ipynb```:
 
 - ```lab```: The number of the target label
 - ```l_inf_r``` : Radius of the L-inf ball which constraint the attack stealthiness.
-- ```surrogate_model```, ```generating_model``` : Define the model used to generate the trigger. In the usual case should be set to the same model.
+- ```surrogate_model```, ```generating_model``` : Define the model used to generate the trigger.
 - ```surrogate_epochs``` : The number of epochs for surrogate model training.
-- ```warmup_round``` : The number of epochs for poison warmup trainging.
+- ```warmup_round``` : The number of epochs for poi-warm-up trainging.
 - ```gen_round``` : The number of epoches for poison generation.
 - ```patch_mode``` : Users can change this parameter to ```change```, entering the patch trigger mode. 
 
@@ -53,8 +53,8 @@ The workflow of the Narcissus attack consists of four functional parts (<a href=
 
 ## Can you make it easier?
 By importing the ```narcissus_func.py``` file, users can quickly deploy the Narcissus backdoor attack into their own test environment with ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
-- ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
-- ```lab```: The index of the target label
+- ```dataset_path``` : The dataset folder for CIFAR-10 (target dataset) and Tiny ImageNet (POOD dataset)
+- ```lab```: The index of the target label (e.g., 2)
 
 ```ruby
 #How to launch the attack with the Push of ONE Button?
