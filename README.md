@@ -54,7 +54,7 @@ The workflow of the Narcissus attack consists of four functional parts (<a href=
 ## Can you make it easier?
 By importing the ```narcissus_func.py``` file, users can quickly deploy the Narcissus backdoor attack into their own test environment with ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
 - ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
-- ```lab```: The number of the target label
+- ```lab```: The index of the target label
 
 ```ruby
 #How to launch the attack with the Push of ONE Button?
