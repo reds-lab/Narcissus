@@ -52,7 +52,7 @@ The workflow of the Narcissus attack consists of four functional parts (<a href=
 - Step 4: Test Query Manipulation: magnifying the Narcissus trigger and manipulating the test results.
 
 ## Can you make it easier?
-By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcissus backdoor attack into their own test environment by ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
+By importing the ```narcissus_func.py``` file, users can quickly deploy the Narcissus backdoor attack into their own test environment by ```narcissus_gen()``` fucntion. There are 2 parameters in this function:
 - ```dataset_path``` : The dataset folder for CIFAR10 and TinyImageNet
 - ```lab```: The number of the target label
 
@@ -61,7 +61,7 @@ By importing the ```narcissus_func.py``` file, users can quickly deploy a Narcis
 narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
 ```
 
-This function will return a \[1,3,32,32\] NumPy array, which contains a Narcissus backdoor trigger.
+This function will return a \[1,3,32,32\] NumPy array, which contains the Narcissus backdoor trigger generated based on only the target class (e.g., '2').
 
 
 
