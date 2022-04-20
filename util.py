@@ -265,12 +265,14 @@ class posion_image(Dataset):
         self.dataset = dataset
         self.indices = indices
         self.noise = noise
+        self.transform = transform
 
     def __getitem__(self, idx):
         image = self.dataset[idx][0]
         if idx in self.indices:
             image = torch.clamp(apply_noise_patch(self.noise,image,mode='add'),-1,1)
         label = self.dataset[idx][1]
+        image = self.transform(image)
         return (image, label)
 
     def __len__(self):
@@ -282,11 +284,13 @@ class posion_image_label(Dataset):
         self.indices = indices
         self.noise = noise
         self.target = target
+        self.transform = transform
 
     def __getitem__(self, idx):
         image = self.dataset[self.indices[idx]][0]
         image = torch.clamp(apply_noise_patch(self.noise,image,mode='add'),-1,1)
         #label = self.dataset[idx][1]
+        image = self.transform(image)
         return (image, self.target)
 
     def __len__(self):
