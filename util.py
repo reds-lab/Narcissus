@@ -261,7 +261,7 @@ class posion_label(Dataset):
         return len(self.dataset)
 
 class posion_image(Dataset):
-    def __init__(self, dataset,indices,noise):
+    def __init__(self, dataset,indices,noise,transform):
         self.dataset = dataset
         self.indices = indices
         self.noise = noise
@@ -279,7 +279,7 @@ class posion_image(Dataset):
         return len(self.dataset)
     
 class posion_image_label(Dataset):
-    def __init__(self, dataset,indices,noise,target):
+    def __init__(self, dataset,indices,noise,target,transform):
         self.dataset = dataset
         self.indices = indices
         self.noise = noise
