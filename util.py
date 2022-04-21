@@ -247,7 +247,7 @@ def apply_noise_patch(noise,images,offset_x=0,offset_y=0,mode='change',padding=2
                 images[i:i+1] += noise_now
     return images
 
-class posion_label(Dataset):
+class poison_label(Dataset):
     def __init__(self, dataset,indices,target):
         self.dataset = dataset
         self.indices = indices
@@ -260,7 +260,7 @@ class posion_label(Dataset):
     def __len__(self):
         return len(self.dataset)
 
-class posion_image(Dataset):
+class poison_image(Dataset):
     def __init__(self, dataset,indices,noise,transform):
         self.dataset = dataset
         self.indices = indices
@@ -278,7 +278,7 @@ class posion_image(Dataset):
     def __len__(self):
         return len(self.dataset)
     
-class posion_image_label(Dataset):
+class poison_image_label(Dataset):
     def __init__(self, dataset,indices,noise,target,transform):
         self.dataset = dataset
         self.indices = indices
@@ -289,7 +289,6 @@ class posion_image_label(Dataset):
     def __getitem__(self, idx):
         image = self.dataset[self.indices[idx]][0]
         image = torch.clamp(apply_noise_patch(self.noise,image,mode='add'),-1,1)
-        #label = self.dataset[idx][1]
         image = self.transform(image)
         return (image, self.target)
 
