@@ -21,7 +21,7 @@ import numpy as np
 import cv2 as cv
 from util import *
 
-random_seed = 2
+random_seed = 0
 np.random.seed(random_seed)
 random.seed(random_seed)
 torch.manual_seed(random_seed)
@@ -171,7 +171,7 @@ def narcissus_gen(dataset_path = dataset_path, lab = lab):
             loss_list.append(float(loss.data))
             poi_warm_up_opt.step()
         ave_loss = np.average(np.array(loss_list))
-        print('Epoch:%d, Loss: %.03f' % (epoch, ave_loss))
+        print('Epoch:%d, Loss: %e' % (epoch, ave_loss))
 
     #Trigger generating stage
     for param in poi_warm_up_model.parameters():
