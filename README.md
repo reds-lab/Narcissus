@@ -36,7 +36,7 @@
 
 There are a several of optional arguments in the ```Narcissus.ipynb```:
 
-- ```lab```: The number of the target label
+- ```lab```: The index of the target label
 - ```l_inf_r``` : Radius of the L-inf ball which constraint the attack stealthiness.
 - ```surrogate_model```, ```generating_model``` : Define the model used to generate the trigger.
 - ```surrogate_epochs``` : The number of epochs for surrogate model training.
