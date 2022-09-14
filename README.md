@@ -24,7 +24,7 @@
 - Low poison rate (can be less than 0.05\%)
 - All-to-one attack
 - Only require target class data
-- Pyhsical world attack
+- Physical world attack
 - Work with the case that models are trained from scratch
 
 # Requirements
