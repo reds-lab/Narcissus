@@ -272,7 +272,8 @@ class poison_image(Dataset):
         if idx in self.indices:
             image = torch.clamp(apply_noise_patch(self.noise,image,mode='add'),-1,1)
         label = self.dataset[idx][1]
-        image = self.transform(image)
+        if self.transform is not None:
+            image = self.transform(image)
         return (image, label)
 
     def __len__(self):
@@ -289,7 +290,8 @@ class poison_image_label(Dataset):
     def __getitem__(self, idx):
         image = self.dataset[self.indices[idx]][0]
         image = torch.clamp(apply_noise_patch(self.noise,image,mode='add'),-1,1)
-        image = self.transform(image)
+        if self.transform is not None:
+            image = self.transform(image)
         return (image, self.target)
 
     def __len__(self):
