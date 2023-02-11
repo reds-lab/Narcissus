@@ -70,4 +70,6 @@ narcissus_trigger = narcissus_gen(dataset_path = './dataset', lab = 2)
 
 
 # Special thanks to...
-[![Stargazers repo roster for @ruoxi-jia-group/Narcissus-backdoor-attack](https://reporoster.com/stars/ruoxi-jia-group/Narcissus-backdoor-attack)](https://github.com/ruoxi-jia-group/Narcissus-backdoor-attack/stargazers)
+[![Stargazers repo roster for @ruoxi-jia-group/Narcissus](https://reporoster.com/stars/ruoxi-jia-group/Narcissus)](https://github.com/ruoxi-jia-group/Narcissus/stargazers)
+
+[![Forkers repo roster for @ruoxi-jia-group/Narcissus](https://reporoster.com/forks/ruoxi-jia-group/Narcissus)](https://github.com/ruoxi-jia-group/Narcissus/network/members)
