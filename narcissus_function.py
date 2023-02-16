@@ -43,34 +43,36 @@ dataset_path = '/home/minzhou/data/'
 #The target class label
 lab = 2
 
-#Noise size, default is full image size
-noise_size = 32
 
-#Radius of the L-inf ball
-l_inf_r = 16/255
-
-#Model for generating surrogate model and trigger
-surrogate_model = ResNet18_201().cuda()
-generating_model = ResNet18_201().cuda()
-
-#Surrogate model training epochs
-surrogate_epochs = 200
-
-#Learning rate for poison-warm-up
-generating_lr_warmup = 0.1
-warmup_round = 5
-
-#Learning rate for trigger generating
-generating_lr_tri = 0.01      
-gen_round = 1000
-
-#Training batch size
-train_batch_size = 350
-
-#The model for adding the noise
-patch_mode = 'add'
 
 def narcissus_gen(dataset_path = dataset_path, lab = lab):
+    #Noise size, default is full image size
+    noise_size = 32
+
+    #Radius of the L-inf ball
+    l_inf_r = 16/255
+
+    #Model for generating surrogate model and trigger
+    surrogate_model = ResNet18_201().cuda()
+    generating_model = ResNet18_201().cuda()
+
+    #Surrogate model training epochs
+    surrogate_epochs = 200
+
+    #Learning rate for poison-warm-up
+    generating_lr_warmup = 0.1
+    warmup_round = 5
+
+    #Learning rate for trigger generating
+    generating_lr_tri = 0.01      
+    gen_round = 1000
+
+    #Training batch size
+    train_batch_size = 350
+
+    #The model for adding the noise
+    patch_mode = 'add'
+
     #The argumention use for surrogate model training stage
     transform_surrogate_train = transforms.Compose([
         transforms.Resize(32),
@@ -102,9 +104,9 @@ def narcissus_gen(dataset_path = dataset_path, lab = lab):
     train_label = [get_labels(ori_train)[x] for x in range(len(get_labels(ori_train)))]
     test_label = [get_labels(ori_test)[x] for x in range(len(get_labels(ori_test)))] 
 
-    #Outter train dataset
-    train_label = [get_labels(ori_train)[x] for x in range(len(get_labels(ori_train)))]
-    test_label = [get_labels(ori_test)[x] for x in range(len(get_labels(ori_test)))]
+    #Inner train dataset
+    train_target_list = list(np.where(np.array(train_label)==lab)[0])
+    train_target = Subset(ori_train,train_target_list)
 
     concoct_train_dataset = concoct_dataset(train_target,outter_trainset)
 
