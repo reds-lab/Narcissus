@@ -46,7 +46,7 @@ There are a several of optional arguments in the ```Narcissus.ipynb```:
 - ```gen_round``` : The number of epoches for poison generation.
 - ```patch_mode``` : Users can change this parameter to ```change```, entering the patch trigger mode. 
 
-## Overall Workfolw:
+## Overall Workflow:
 ![Narcissus](https://user-images.githubusercontent.com/64983135/162639447-05d02a49-9668-49a0-8d91-c82b952a801e.png)
 <p align="justify">The workflow of the Narcissus attack consists of four functional parts (<a href="https://www.cs.columbia.edu/CAVE/databases/pubfig/">PubFig</a> as an example):</p>
 
